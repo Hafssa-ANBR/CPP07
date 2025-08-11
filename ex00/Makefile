@@ -2,7 +2,7 @@ NAME = whatever
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 rm = rm -rf
-HEADERS = whatever.hpp
+HEADERS = Whatever.hpp
 
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
