@@ -6,7 +6,7 @@
 /*   By: hanebaro <hanebaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 15:58:37 by hanebaro          #+#    #+#             */
-/*   Updated: 2025/08/11 18:21:21 by hanebaro         ###   ########.fr       */
+/*   Updated: 2025/08/18 12:46:46 by hanebaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class Array
             tab = new T[n];
         }
         
-        Array(const Array &cpy)
+        Array(const Array &cpy) : Asize(0)
         {
             *this = cpy;
         }
@@ -40,11 +40,12 @@ class Array
         {
             if(this != &affect)
             {
-                delete[] tab;
+                if(Asize != 0)
+                    delete[] tab;
                 Asize = affect.Asize;
                 tab = new T[Asize];
                 for(unsigned int i = 0; i < Asize; i++)
-                    tab = affect.tab[i];
+                    tab[i] = affect.tab[i];
             }
             return (*this);
         }
