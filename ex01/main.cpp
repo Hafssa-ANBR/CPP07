@@ -6,7 +6,7 @@
 /*   By: hanebaro <hanebaro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 13:35:20 by hanebaro          #+#    #+#             */
-/*   Updated: 2025/08/11 15:41:12 by hanebaro         ###   ########.fr       */
+/*   Updated: 2025/08/18 12:02:19 by hanebaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void increment(int &x)
 {
     std::cout << ++x << std::endl;
-    
 }
 int main()
 {

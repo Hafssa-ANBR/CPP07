@@ -2,7 +2,7 @@ NAME = iter
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 rm = rm -rf
-HEADERS = Iter.hpp
+HEADERS = iter.hpp
 
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
